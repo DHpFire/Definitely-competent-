@@ -22,13 +22,13 @@ scale = Vector2(1.05625, 0.9361446)
 texture = ExtResource("1_kbsf5")
 
 [node name="Crash" type="Sprite2D" parent="." unique_id=1036868167]
-position = Vector2(576.5, 328)
+position = Vector2(573, 330)
 scale = Vector2(0.44804686, 0.31573802)
 texture = ExtResource("4_v3lus")
 
 [node name="Scope" type="Sprite2D" parent="." unique_id=57374586]
 z_index = 2
-position = Vector2(129, -128)
+position = Vector2(10, 5)
 texture = ExtResource("3_tdsg4")
 script = ExtResource("1_v3lus")
 
@@ -40,4 +40,5 @@ position = Vector2(594, 326)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_kbsf5")
 
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

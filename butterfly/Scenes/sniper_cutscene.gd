@@ -3,8 +3,9 @@ extends Node2D
 func _ready():
 	$Crash.hide()
 
+	
 
-func _on_area_2d_mouse_entered(event) -> void:
+func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
 			$Hinden.hide()
