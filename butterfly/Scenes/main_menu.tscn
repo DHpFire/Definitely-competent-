@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dorb2jiwyp444"]
 
+[ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="1_28flt"]
+
 [node name="mainMenu" type="Control" unique_id=1600239089]
 layout_mode = 3
 anchors_preset = 15
@@ -8,21 +10,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=588304552]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 644.0
-color = Color(0.098728366, 0.09872835, 0.09872835, 1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1470260177]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.99500006
+anchor_bottom = 0.99700004
+offset_top = 2.0
+offset_right = -0.2401123
+offset_bottom = -0.056030273
+texture = ExtResource("1_28flt")
 
 [node name="Label" type="Label" parent="." unique_id=741816798]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.11800001
-offset_left = 396.0
-offset_top = 16.0
-offset_right = -392.0
-offset_bottom = 8.5359955
+offset_left = 400.0
+offset_top = 39.0
+offset_right = -388.0
+offset_bottom = 31.535995
 theme_override_font_sizes/font_size = 50
 text = "Butterfly effect"
 
@@ -31,10 +37,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.11800001
-offset_left = 29.0
-offset_top = 552.0
-offset_right = -628.0
-offset_bottom = 544.536
+offset_left = 15.0
+offset_top = 562.0
+offset_right = -642.0
+offset_bottom = 554.536
 theme_override_font_sizes/font_size = 50
 text = "Definetly competent"
 
