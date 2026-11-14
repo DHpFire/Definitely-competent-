@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="1_n1pjj"]
 [ext_resource type="TileSet" uid="uid://h0baplq4rpkn" path="res://Scenes/tiles.tres" id="2_sxwcw"]
-[ext_resource type="PackedScene" uid="uid://jrfjsg104030" path="res://Assets/Sprites/butter_fly.tscn" id="3_aui3v"]
+[ext_resource type="PackedScene" uid="uid://bax1mp4rxlq8j" path="res://Scenes/butter_fly.tscn" id="3_aui3v"]
 
 [node name="jfk" type="Node2D" unique_id=2069893650]
 

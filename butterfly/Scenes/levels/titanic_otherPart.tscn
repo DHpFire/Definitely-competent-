@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://cnei0uujgkmo5"]
 
 [ext_resource type="TileSet" uid="uid://h0baplq4rpkn" path="res://Scenes/tiles.tres" id="1_g0dfi"]
-[ext_resource type="PackedScene" uid="uid://jrfjsg104030" path="res://Assets/Sprites/butter_fly.tscn" id="2_4x6bs"]
+[ext_resource type="PackedScene" uid="uid://bax1mp4rxlq8j" path="res://Scenes/butter_fly.tscn" id="2_4x6bs"]
 
 [node name="titanic" type="Node2D" unique_id=2069893650]
 

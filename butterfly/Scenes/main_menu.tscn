@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dorb2jiwyp444"]
 
 [ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="1_28flt"]
-[ext_resource type="Script" uid="uid://t1lmwl2hv6vd" path="res://Scenes/main_menu.gd" id="1_48xlc"]
+[ext_resource type="Script" uid="uid://t1lmwl2hv6vd" path="res://Scripts/main_menu.gd" id="1_48xlc"]
 
 [node name="mainMenu" type="Control" unique_id=1600239089]
 layout_mode = 3
