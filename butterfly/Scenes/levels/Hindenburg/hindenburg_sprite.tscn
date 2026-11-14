@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://ch0m7k3jublkk"]
 
 [ext_resource type="Texture2D" uid="uid://cd5gcbx7m0rft" path="res://Assets/Sprites/IMG_0289.png" id="1_2g0n1"]
+[ext_resource type="Script" uid="uid://b10xun1ngsn3p" path="res://Scenes/levels/Hindenburg/hindenburg_sprite.gd" id="1_5xglq"]
 
-[node name="Hindenburg_Sprite" type="CharacterBody2D" unique_id=1056688726]
+[node name="Hindenburg_Sprite" type="CharacterBody2D" unique_id=1056688726 groups=["hin"]]
+script = ExtResource("1_5xglq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=121245858]
 texture = ExtResource("1_2g0n1")

@@ -12,5 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group('butterfly'):
+	if body.is_in_group('butterfly') and Global.hin_stage == 2:
+		Global.hin_stage = 3
 		get_tree().change_scene_to_file("res://Scenes/levels/Hindenburg/sniper_cutscene.tscn")

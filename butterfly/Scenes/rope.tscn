@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ct57l2mi8t10y"]
+
+[ext_resource type="Script" uid="uid://ctqxr14evqwgi" path="res://Scenes/rope.gd" id="1_qawu5"]
+[ext_resource type="Texture2D" uid="uid://bllej50eldhq6" path="res://Assets/Sprites/Stolen/Hook.png" id="2_qawu5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_no7b2"]
+size = Vector2(11.912455, 19.840347)
+
+[node name="Rope" type="Area2D" unique_id=1343831168]
+script = ExtResource("1_qawu5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1989996149]
+position = Vector2(-4, 0)
+texture = ExtResource("2_qawu5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1177512410]
+position = Vector2(0, 64)
+shape = SubResource("RectangleShape2D_no7b2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
