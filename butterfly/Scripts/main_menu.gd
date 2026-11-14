@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file('res://Scenes/levels/Hindenburg.tscn')
+	get_tree().change_scene_to_file('res://Scenes/levels/Hindenburg/Hindenburg.tscn')
 
 
 func _on_quit_pressed() -> void:

@@ -25,6 +25,10 @@ Global="*uid://c0lgipdf2gca0"
 butterfly=""
 hin=""
 
+[gui]
+
+theme/custom_font="uid://d1aivi7he1w05"
+
 [input]
 
 Up={

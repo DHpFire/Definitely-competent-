@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://dorb2jiwyp444"]
 
-[ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="1_28flt"]
-[ext_resource type="Script" uid="uid://t1lmwl2hv6vd" path="res://Scripts/main_menu.gd" id="1_48xlc"]
+[ext_resource type="Script" uid="uid://t1lmwl2hv6vd" path="res://Scripts/main_menu.gd" id="1_i2xx2"]
+[ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="2_o14dv"]
+[ext_resource type="FontFile" uid="uid://b6ern3bc46qg2" path="res://Assets/font/RioGrande.ttf" id="3_mrfpk"]
+[ext_resource type="FontFile" uid="uid://b6a7uemeow5o6" path="res://Assets/font/BroncoPersonalUse.ttf" id="4_4pqbp"]
+[ext_resource type="FontFile" uid="uid://d1aivi7he1w05" path="res://Assets/font/RomanAntique.ttf" id="5_gih0s"]
 
 [node name="mainMenu" type="Control" unique_id=1600239089]
 layout_mode = 3
@@ -10,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_48xlc")
+script = ExtResource("1_i2xx2")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1470260177]
 layout_mode = 1
@@ -20,17 +23,19 @@ anchor_bottom = 0.99700004
 offset_top = 2.0
 offset_right = -0.2401123
 offset_bottom = -0.056030273
-texture = ExtResource("1_28flt")
+texture = ExtResource("2_o14dv")
 
 [node name="Label" type="Label" parent="." unique_id=741816798]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.11800001
-offset_left = 400.0
-offset_top = 39.0
-offset_right = -388.0
-offset_bottom = 31.535995
+offset_left = 356.0
+offset_top = 64.0
+offset_right = -361.0
+offset_bottom = 56.535995
+theme_override_colors/font_color = Color(0.0018410678, 0.0018410682, 0.0018410678, 1)
+theme_override_fonts/font = ExtResource("3_mrfpk")
 theme_override_font_sizes/font_size = 50
 text = "Butterfly effect"
 
@@ -39,32 +44,37 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.11800001
-offset_left = 15.0
-offset_top = 562.0
-offset_right = -642.0
-offset_bottom = 554.536
-theme_override_font_sizes/font_size = 50
-text = "Definetly competent"
+offset_left = 16.0
+offset_top = 584.0
+offset_right = -823.0
+offset_bottom = 555.536
+theme_override_fonts/font = ExtResource("4_4pqbp")
+theme_override_font_sizes/font_size = 30
+text = "A Definetly Competent Game"
 
 [node name="buttons" type="VBoxContainer" parent="." unique_id=1883160990]
 layout_mode = 0
 offset_left = 511.0
 offset_top = 233.0
 offset_right = 635.0
-offset_bottom = 391.0
+offset_bottom = 377.0
 
 [node name="Play" type="Button" parent="buttons" unique_id=1425750047]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gih0s")
 theme_override_font_sizes/font_size = 30
 text = "Play"
 
 [node name="Settings" type="Button" parent="buttons" unique_id=885024011]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gih0s")
 theme_override_font_sizes/font_size = 30
+disabled = true
 text = "Settings"
 
 [node name="Quit" type="Button" parent="buttons" unique_id=752509931]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gih0s")
 theme_override_font_sizes/font_size = 30
 text = "quit"
 

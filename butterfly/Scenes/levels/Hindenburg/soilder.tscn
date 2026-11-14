@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://mnaku5vx25ha"]
+
+[ext_resource type="Texture2D" uid="uid://1fw34apvikvj" path="res://Assets/Sprites/icon.svg" id="1_4jq4d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ku4e"]
+size = Vector2(50, 126)
+
+[node name="Gardener" type="CharacterBody2D" unique_id=1385796743]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1623224639]
+position = Vector2(0, -3.5527137e-15)
+scale = Vector2(0.3925781, 0.984375)
+texture = ExtResource("1_4jq4d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=745708505]
+shape = SubResource("RectangleShape2D_5ku4e")
