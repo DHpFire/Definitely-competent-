@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Assets/Sprites/icon.svg"
 <<<<<<<Updatedupstreamrun/main_scene="uid://dorb2jiwyp444"
 
+[global_group]
+
+butterfly=""
+
 [input]
 
 Up={

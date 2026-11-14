@@ -43,10 +43,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="ButterFly" type="CharacterBody2D" unique_id=750643943]
+[node name="ButterFly" type="CharacterBody2D" unique_id=750643943 groups=["butterfly"]]
 script = ExtResource("1_y80f6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715311902]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715311902 groups=["butterfly"]]
 shape = SubResource("RectangleShape2D_73w8c")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1422833581]

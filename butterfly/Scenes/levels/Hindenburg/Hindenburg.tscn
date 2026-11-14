@@ -4,9 +4,10 @@
 [ext_resource type="Script" uid="uid://b4rgorna6r7sv" path="res://Scenes/levels/Hindenburg/hindenburg.gd" id="1_11ssr"]
 [ext_resource type="Texture2D" uid="uid://dxriultrajmgw" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_3.png" id="2_11ssr"]
 [ext_resource type="Texture2D" uid="uid://cs5vailgx5q43" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_4.png" id="3_365la"]
-[ext_resource type="PackedScene" uid="uid://ch0m7k3jublkk" path="res://Scenes/levels/hindenburg_sprite.tscn" id="5_2be2g"]
+[ext_resource type="PackedScene" uid="uid://ch0m7k3jublkk" path="res://Scenes/levels/Hindenburg/hindenburg_sprite.tscn" id="5_2be2g"]
 [ext_resource type="TileSet" uid="uid://cog7h8dmxqjc2" path="res://Scenes/tiles.tres" id="5_7fyip"]
 [ext_resource type="PackedScene" uid="uid://bax1mp4rxlq8j" path="res://Scenes/butter_fly.tscn" id="6_w8o2m"]
+[ext_resource type="PackedScene" uid="uid://b02i4614olly7" path="res://Scenes/rifle.tscn" id="8_6sjl4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_11ssr"]
 size = Vector2(1285, 175.5)
@@ -105,5 +106,8 @@ position = Vector2(1245, 193)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1731404634]
 position = Vector2(-1, 1.25)
 shape = SubResource("RectangleShape2D_365la")
+
+[node name="Rifle" parent="." unique_id=1343831168 instance=ExtResource("8_6sjl4")]
+position = Vector2(260, 377)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

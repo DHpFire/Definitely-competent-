@@ -12,6 +12,5 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print('hi')
-	#if has_method('butterfly'):
-	get_tree().change_scene_to_file("res://Scenes/end_screen.tscn")
+	if body.is_in_group('butterfly'):
+		get_tree().change_scene_to_file("res://Scenes/UI/end_screen.tscn")
