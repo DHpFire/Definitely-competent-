@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://jrfjsg104030"]
+[gd_scene format=3 uid="uid://bax1mp4rxlq8j"]
 
 [ext_resource type="Script" uid="uid://d0oimrt2w42uc" path="res://butter_fly.gd" id="1_y80f6"]
 [ext_resource type="Texture2D" uid="uid://d1srrp20xijs8" path="res://Assets/I4L_Butterfly_Sprite256x64(64).png" id="2_73w8c"]
-[ext_resource type="Script" path="res://Assets/Sprites/camera_2d.gd" id="3_73w8c"]
+[ext_resource type="Script" uid="uid://bnk8l6y5uh0hm" path="res://Assets/Sprites/camera_2d.gd" id="3_73w8c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73w8c"]
 size = Vector2(13, 13)
@@ -45,6 +45,7 @@ animations = [{
 
 [node name="ButterFly" type="CharacterBody2D" unique_id=750643943]
 script = ExtResource("1_y80f6")
+speed = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715311902]
 shape = SubResource("RectangleShape2D_73w8c")
@@ -59,3 +60,6 @@ frame_progress = 0.9967695
 [node name="Camera2D" type="Camera2D" parent="." unique_id=94938156]
 zoom = Vector2(4, 4)
 script = ExtResource("3_73w8c")
+look_ahead_distance = 20.0
+look_ahead_speed = 0.5
+return_speed = 5.0

@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://dxn47qm6trf3b"]
+[gd_scene format=4 uid="uid://uqjui8kuqy25"]
 
 [ext_resource type="Texture2D" uid="uid://cda3fjascmqir" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_1.png" id="1_6q3n4"]
 [ext_resource type="Texture2D" uid="uid://dxriultrajmgw" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_3.png" id="2_4c2oa"]
@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b7oe0w1a5rk0t" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_47Tiles.png" id="5_q6lx1"]
 [ext_resource type="Texture2D" uid="uid://bqrgb43k0kks3" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_ExtraTiles.png" id="6_5qtum"]
 [ext_resource type="Texture2D" uid="uid://c0wgxjlngthr" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_BgdTiles.png" id="7_ie368"]
-[ext_resource type="PackedScene" uid="uid://jrfjsg104030" path="res://Assets/Sprites/butter_fly.tscn" id="8_x5dfk"]
+[ext_resource type="PackedScene" uid="uid://bax1mp4rxlq8j" path="res://Assets/Sprites/butter_fly.tscn" id="8_x5dfk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iw27f"]
 texture = ExtResource("5_q6lx1")
@@ -296,5 +296,5 @@ tile_set = SubResource("TileSet_gqbix")
 
 [node name="ButterFly" parent="." unique_id=750643943 instance=ExtResource("8_x5dfk")]
 position = Vector2(41, 37)
-speed = 150.0
-acceleration = 1000.0
+speed = 50.0
+friction = 450.0
