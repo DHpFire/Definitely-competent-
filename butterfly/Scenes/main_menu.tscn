@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dorb2jiwyp444"]
 
 [ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="1_28flt"]
+[ext_resource type="Script" uid="uid://t1lmwl2hv6vd" path="res://Scenes/main_menu.gd" id="1_48xlc"]
 
 [node name="mainMenu" type="Control" unique_id=1600239089]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_48xlc")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1470260177]
 layout_mode = 1
@@ -56,12 +58,16 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Play"
 
-[node name="Button2" type="Button" parent="buttons" unique_id=885024011]
+[node name="Settings" type="Button" parent="buttons" unique_id=885024011]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Settings"
 
-[node name="Button3" type="Button" parent="buttons" unique_id=752509931]
+[node name="Quit" type="Button" parent="buttons" unique_id=752509931]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "quit"
+
+[connection signal="pressed" from="buttons/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="buttons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="buttons/Quit" to="." method="_on_quit_pressed"]
