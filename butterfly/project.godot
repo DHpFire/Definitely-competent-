@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="Butterfly"
+<<<<<<< Updated upstream
 run/main_scene="uid://dorb2jiwyp444"
+=======
+run/main_scene="uid://bdcckpo7gp07v"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

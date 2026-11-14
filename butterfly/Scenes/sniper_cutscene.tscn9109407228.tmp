@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bdcckpo7gp07v"]
+
+[ext_resource type="Texture2D" uid="uid://b1u0e81enuetx" path="res://Assets/Sprites/Hindenburg.png" id="1_kbsf5"]
+[ext_resource type="Script" uid="uid://biloqpsyyf6mi" path="res://scope_body.gd" id="2_v3lus"]
+[ext_resource type="Texture2D" uid="uid://j3x31oila6g0" path="res://Assets/Sprites/Scope2.png" id="3_tdsg4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53p6p"]
+
+[node name="Sniper Cutscene" type="Node2D" unique_id=107024062]
+y_sort_enabled = true
+
+[node name="Hinden" type="Sprite2D" parent="." unique_id=1963506699]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(570.00006, 290.00003)
+scale = Vector2(1.05625, 0.9361446)
+texture = ExtResource("1_kbsf5")
+
+[node name="ScopeBody" type="CharacterBody2D" parent="." unique_id=1045829355]
+script = ExtResource("2_v3lus")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScopeBody" unique_id=1170261503]
+shape = SubResource("RectangleShape2D_53p6p")
+
+[node name="Scope" type="Sprite2D" parent="ScopeBody" unique_id=57374586]
+z_index = 2
+position = Vector2(527, 312)
+texture = ExtResource("3_tdsg4")
