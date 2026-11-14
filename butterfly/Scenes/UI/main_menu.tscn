@@ -21,19 +21,19 @@ anchors_preset = -1
 anchor_right = 0.99500006
 anchor_bottom = 0.99700004
 offset_top = 2.0
-offset_right = -0.2401123
-offset_bottom = -0.056030273
+offset_right = 6.7598877
+offset_bottom = 1.9439697
 texture = ExtResource("2_o14dv")
 
 [node name="Label" type="Label" parent="." unique_id=741816798]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
-anchor_bottom = 0.11800001
-offset_left = 356.0
-offset_top = 64.0
-offset_right = -361.0
-offset_bottom = 56.535995
+anchor_bottom = 0.18200001
+offset_left = 364.0
+offset_top = 78.0
+offset_right = -353.0
+offset_bottom = 29.063995
 theme_override_colors/font_color = Color(0.0018410678, 0.0018410682, 0.0018410678, 1)
 theme_override_fonts/font = ExtResource("3_mrfpk")
 theme_override_font_sizes/font_size = 50

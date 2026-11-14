@@ -21,87 +21,89 @@ size = Vector2(67, 392.5)
 [node name="Hindenburg" type="Node2D" unique_id=2069893650]
 script = ExtResource("1_11ssr")
 
-[node name="GrassLandBackground1" type="Sprite2D" parent="." unique_id=883688732]
+[node name="background" type="Node2D" parent="." unique_id=946175074]
+
+[node name="GrassLandBackground1" type="Sprite2D" parent="background" unique_id=883688732]
 position = Vector2(369.00003, 291)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground2" type="Sprite2D" parent="." unique_id=1966123651]
+[node name="GrassLandBackground2" type="Sprite2D" parent="background" unique_id=1966123651]
 position = Vector2(863.00006, 290)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground10" type="Sprite2D" parent="." unique_id=85670496]
+[node name="GrassLandBackground10" type="Sprite2D" parent="background" unique_id=85670496]
 position = Vector2(1584, 193)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground11" type="Sprite2D" parent="." unique_id=543407119]
+[node name="GrassLandBackground11" type="Sprite2D" parent="background" unique_id=543407119]
 position = Vector2(1564.0001, -180)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground14" type="Sprite2D" parent="." unique_id=912322160]
+[node name="GrassLandBackground14" type="Sprite2D" parent="background" unique_id=912322160]
 position = Vector2(-333, 233)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground15" type="Sprite2D" parent="." unique_id=1796982059]
+[node name="GrassLandBackground15" type="Sprite2D" parent="background" unique_id=1796982059]
 position = Vector2(-333, -158)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground5" type="Sprite2D" parent="." unique_id=355971689]
+[node name="GrassLandBackground5" type="Sprite2D" parent="background" unique_id=355971689]
 position = Vector2(868.00006, -101)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground7" type="Sprite2D" parent="." unique_id=430764740]
+[node name="GrassLandBackground7" type="Sprite2D" parent="background" unique_id=430764740]
 position = Vector2(641.0001, 292.00003)
 scale = Vector2(1.2629222, 0.7159766)
 texture = ExtResource("2_11ssr")
 
-[node name="GrassLandBackground8" type="Sprite2D" parent="." unique_id=743282842]
+[node name="GrassLandBackground8" type="Sprite2D" parent="background" unique_id=743282842]
 position = Vector2(1107, 288)
 scale = Vector2(1.2629222, 0.7159766)
 texture = ExtResource("2_11ssr")
 
-[node name="GrassLandBackground9" type="Sprite2D" parent="." unique_id=179291711]
+[node name="GrassLandBackground9" type="Sprite2D" parent="background" unique_id=179291711]
 position = Vector2(1587, 292)
 scale = Vector2(1.2629222, 0.7159766)
 texture = ExtResource("2_11ssr")
 
-[node name="GrassLandBackground6" type="Sprite2D" parent="." unique_id=35111790]
+[node name="GrassLandBackground6" type="Sprite2D" parent="background" unique_id=35111790]
 position = Vector2(370.00006, -101)
 scale = Vector2(2.0135868, 1.903846)
 texture = ExtResource("1_2be2g")
 
-[node name="GrassLandBackground3" type="Sprite2D" parent="." unique_id=750016958]
+[node name="GrassLandBackground3" type="Sprite2D" parent="background" unique_id=750016958]
 position = Vector2(222.00002, 279)
 scale = Vector2(1.123798, 0.8461539)
 texture = ExtResource("2_11ssr")
 
-[node name="GrassLandBackground3" type="Sprite2D" parent="GrassLandBackground3" unique_id=1084828233]
+[node name="GrassLandBackground3" type="Sprite2D" parent="background/GrassLandBackground3" unique_id=1084828233]
 position = Vector2(-416.445, 7.0909424)
 scale = Vector2(1.123798, 0.8461539)
 texture = ExtResource("2_11ssr")
 
-[node name="GrassLandBackground12" type="Sprite2D" parent="." unique_id=1595140333]
+[node name="GrassLandBackground12" type="Sprite2D" parent="background" unique_id=1595140333]
 position = Vector2(850, 296.99994)
 scale = Vector2(1.4609689, 0.96190816)
 texture = ExtResource("3_365la")
 
-[node name="GrassLandBackground13" type="Sprite2D" parent="." unique_id=499031077]
+[node name="GrassLandBackground13" type="Sprite2D" parent="background" unique_id=499031077]
 position = Vector2(1495, 297)
 scale = Vector2(1.4609689, 0.96190816)
 texture = ExtResource("3_365la")
 
-[node name="GrassLandBackground4" type="Sprite2D" parent="." unique_id=1339735452]
+[node name="GrassLandBackground4" type="Sprite2D" parent="background" unique_id=1339735452]
 position = Vector2(266.25, 296)
 scale = Vector2(1.2087054, 0.98076916)
 texture = ExtResource("3_365la")
 
-[node name="GrassLandBackground4" type="Sprite2D" parent="GrassLandBackground4" unique_id=424358819]
+[node name="GrassLandBackground4" type="Sprite2D" parent="background/GrassLandBackground4" unique_id=424358819]
 position = Vector2(-465.9944, -2.0392761)
 scale = Vector2(1.2087054, 0.98076916)
 texture = ExtResource("3_365la")
