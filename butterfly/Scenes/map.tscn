@@ -1,8 +1,12 @@
 [gd_scene format=4 uid="uid://dxn47qm6trf3b"]
 
+[ext_resource type="Texture2D" uid="uid://cda3fjascmqir" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_1.png" id="1_71pa8"]
 [ext_resource type="Texture2D" uid="uid://b7oe0w1a5rk0t" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_47Tiles.png" id="1_e0an3"]
+[ext_resource type="Texture2D" uid="uid://dxriultrajmgw" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_3.png" id="2_05x41"]
 [ext_resource type="Texture2D" uid="uid://bqrgb43k0kks3" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_ExtraTiles.png" id="2_p5pve"]
+[ext_resource type="Texture2D" uid="uid://cs5vailgx5q43" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_4.png" id="3_gqbix"]
 [ext_resource type="Texture2D" uid="uid://c0wgxjlngthr" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_BgdTiles.png" id="3_urblq"]
+[ext_resource type="Texture2D" uid="uid://dbobl1sperf6r" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_5.png" id="4_oysan"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iw27f"]
 texture = ExtResource("1_e0an3")
@@ -267,6 +271,22 @@ sources/3 = SubResource("TileSetAtlasSource_05x41")
 
 [node name="Map" type="Node2D" unique_id=2069893650]
 
+[node name="GrassLandBackground1" type="Sprite2D" parent="." unique_id=883688732]
+position = Vector2(183, 105)
+texture = ExtResource("1_71pa8")
+
+[node name="GrassLandBackground3" type="Sprite2D" parent="." unique_id=750016958]
+position = Vector2(209, 107)
+texture = ExtResource("2_05x41")
+
+[node name="GrassLandBackground4" type="Sprite2D" parent="." unique_id=1339735452]
+position = Vector2(190, 117)
+texture = ExtResource("3_gqbix")
+
+[node name="GrassLandBackground5" type="Sprite2D" parent="." unique_id=1454019483]
+position = Vector2(182, 120)
+texture = ExtResource("4_oysan")
+
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=332436658]
-tile_map_data = PackedByteArray("AAACAAMAAAACAAIAAAADAAMAAAACAAIAAAAEAAMAAAACAAIAAAAFAAMAAgABAAMAAAAGAAMAAgABAAMAAAAHAAMAAgABAAMAAAAIAAMAAgABAAMAAAAJAAMAAgABAAMAAAAHAAIAAgABAAAAAAAIAAIAAgABAAAAAAAJAAIAAgABAAAAAAAKAAIAAgABAAAAAAA=")
+tile_map_data = PackedByteArray("AAACAAMAAAACAAIAAAADAAMAAAACAAIAAAAEAAMAAAACAAIAAAAFAAMAAgABAAMAAAAGAAMAAgABAAMAAAAHAAMAAgABAAMAAAAIAAMAAgABAAMAAAAJAAMAAgABAAMAAAAHAAIAAgABAAAAAAAIAAIAAgABAAAAAAAJAAIAAgABAAAAAAAKAAIAAgABAAAAAAADAAgAAAAAAAAAAAAEAAgAAAAAAAAAAAAFAAgAAAAAAAAAAAAGAAgAAAAAAAAAAAACAAcAAAAAAAAAAAACAAgAAAAAAAAAAAAHAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAAJAAYAAAAAAAAAAAAKAAYAAAAAAAAAAAALAAYAAAAAAAAAAAAMAAYAAAAAAAAAAAANAAYAAAAAAAAAAAAOAAYAAAAAAAAAAAAIAAgAAAAAAAAAAAAJAAgAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAANAAcAAAAAAAAAAAARAAQAAwABAAMAAAASAAQAAwABAAMAAAASAAUAAwABAAMAAAASAAYAAwABAAMAAAATAAcAAwABAAMAAAATAAgAAwABAAMAAAAQAAMAAwAAAAIAAAAQAAQAAwAAAAMAAAAQAAUAAgAHAAAAAAAQAAYAAgAHAAAAAAAQAAcAAwAAAAMAAAAQAAgAAwAAAAMAAAAQAAkAAwAAAAMAAAAQAAoAAwAAAAMAAAAMAAoAAgAHAAAAAAAMAAkAAgAHAAAAAAANAAkAAgAHAAAAAAANAAgAAgAHAAAAAAAOAAgAAgAHAAAAAAAOAAcAAgAHAAAAAAAPAAcAAgAHAAAAAAARAAUAAgAHAAAAAAAOAAIAAgAIAAAAAAANAAMAAgAIAAAAAAANAAIAAgAHAAAAAAAMAAMAAgAHAAAAAAALAAQAAgAHAAAAAAAMAAQAAgAIAAAAAAA=")
 tile_set = SubResource("TileSet_gqbix")
