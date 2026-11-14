@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1srrp20xijs8"
-path="res://.godot/imported/I4L_Butterfly_Sprite256x64(64).png-4e82a0b288bf520d695237fd62c51bd8.ctex"
+uid="uid://1fw34apvikvj"
+path="res://.godot/imported/icon.svg-937281dbc6e7ba0435124e30fe85aebc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/I4L_Butterfly_Sprite256x64(64).png"
-dest_files=["res://.godot/imported/I4L_Butterfly_Sprite256x64(64).png-4e82a0b288bf520d695237fd62c51bd8.ctex"]
+source_file="res://Assets/Sprites/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-937281dbc6e7ba0435124e30fe85aebc.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

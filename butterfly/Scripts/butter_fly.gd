@@ -4,6 +4,9 @@ extends CharacterBody2D
 @export var acceleration: float = 1800.0
 @export var friction: float = 200
 
+func butterfly():
+	pass
+
 func _ready():
 	$Sprite2D.play("flying")
 
