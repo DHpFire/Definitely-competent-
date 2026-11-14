@@ -1,15 +1,16 @@
 [gd_scene format=4 uid="uid://dxn47qm6trf3b"]
 
-[ext_resource type="Texture2D" uid="uid://cda3fjascmqir" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_1.png" id="1_71pa8"]
-[ext_resource type="Texture2D" uid="uid://b7oe0w1a5rk0t" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_47Tiles.png" id="1_e0an3"]
-[ext_resource type="Texture2D" uid="uid://dxriultrajmgw" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_3.png" id="2_05x41"]
-[ext_resource type="Texture2D" uid="uid://bqrgb43k0kks3" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_ExtraTiles.png" id="2_p5pve"]
-[ext_resource type="Texture2D" uid="uid://cs5vailgx5q43" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_4.png" id="3_gqbix"]
-[ext_resource type="Texture2D" uid="uid://c0wgxjlngthr" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_BgdTiles.png" id="3_urblq"]
-[ext_resource type="Texture2D" uid="uid://dbobl1sperf6r" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_5.png" id="4_oysan"]
+[ext_resource type="Texture2D" uid="uid://cda3fjascmqir" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_1.png" id="1_6q3n4"]
+[ext_resource type="Texture2D" uid="uid://dxriultrajmgw" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_3.png" id="2_4c2oa"]
+[ext_resource type="Texture2D" uid="uid://cs5vailgx5q43" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_4.png" id="3_olcgw"]
+[ext_resource type="Texture2D" uid="uid://dbobl1sperf6r" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_5.png" id="4_dlo4w"]
+[ext_resource type="Texture2D" uid="uid://b7oe0w1a5rk0t" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_47Tiles.png" id="5_q6lx1"]
+[ext_resource type="Texture2D" uid="uid://bqrgb43k0kks3" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_ExtraTiles.png" id="6_5qtum"]
+[ext_resource type="Texture2D" uid="uid://c0wgxjlngthr" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Terrain/Grassland_Terrain_BgdTiles.png" id="7_ie368"]
+[ext_resource type="PackedScene" uid="uid://jrfjsg104030" path="res://Assets/Sprites/butter_fly.tscn" id="8_x5dfk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iw27f"]
-texture = ExtResource("1_e0an3")
+texture = ExtResource("5_q6lx1")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -106,7 +107,7 @@ texture = ExtResource("1_e0an3")
 10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_71pa8"]
-texture = ExtResource("2_p5pve")
+texture = ExtResource("6_5qtum")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, -0.08705139, 0.43525887, -8, 8, 8, 8)
 1:0/0 = 0
@@ -177,7 +178,9 @@ texture = ExtResource("2_p5pve")
 15:2/0 = 0
 15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-1.1316719, -8, -8, -8, -8, 8, -1.4798775, 8)
 0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, 0, 0, -8, -8)
 1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 0, 0, -8, 8)
 2:3/0 = 0
 2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 1.828085, -8, 1.828085)
 5:3/0 = 0
@@ -213,7 +216,7 @@ texture = ExtResource("2_p5pve")
 6:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_05x41"]
-texture = ExtResource("3_urblq")
+texture = ExtResource("7_ie368")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 0, 8, 0, 8, 8, 0, 8)
 1:0/0 = 0
@@ -273,20 +276,25 @@ sources/3 = SubResource("TileSetAtlasSource_05x41")
 
 [node name="GrassLandBackground1" type="Sprite2D" parent="." unique_id=883688732]
 position = Vector2(183, 105)
-texture = ExtResource("1_71pa8")
+texture = ExtResource("1_6q3n4")
 
 [node name="GrassLandBackground3" type="Sprite2D" parent="." unique_id=750016958]
 position = Vector2(209, 107)
-texture = ExtResource("2_05x41")
+texture = ExtResource("2_4c2oa")
 
 [node name="GrassLandBackground4" type="Sprite2D" parent="." unique_id=1339735452]
 position = Vector2(190, 117)
-texture = ExtResource("3_gqbix")
+texture = ExtResource("3_olcgw")
 
 [node name="GrassLandBackground5" type="Sprite2D" parent="." unique_id=1454019483]
 position = Vector2(182, 120)
-texture = ExtResource("4_oysan")
+texture = ExtResource("4_dlo4w")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=332436658]
 tile_map_data = PackedByteArray("AAACAAMAAAACAAIAAAADAAMAAAACAAIAAAAEAAMAAAACAAIAAAAFAAMAAgABAAMAAAAGAAMAAgABAAMAAAAHAAMAAgABAAMAAAAIAAMAAgABAAMAAAAJAAMAAgABAAMAAAAHAAIAAgABAAAAAAAIAAIAAgABAAAAAAAJAAIAAgABAAAAAAAKAAIAAgABAAAAAAADAAgAAAAAAAAAAAAEAAgAAAAAAAAAAAAFAAgAAAAAAAAAAAAGAAgAAAAAAAAAAAACAAcAAAAAAAAAAAACAAgAAAAAAAAAAAAHAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAAJAAYAAAAAAAAAAAAKAAYAAAAAAAAAAAALAAYAAAAAAAAAAAAMAAYAAAAAAAAAAAANAAYAAAAAAAAAAAAOAAYAAAAAAAAAAAAIAAgAAAAAAAAAAAAJAAgAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAANAAcAAAAAAAAAAAARAAQAAwABAAMAAAASAAQAAwABAAMAAAASAAUAAwABAAMAAAASAAYAAwABAAMAAAATAAcAAwABAAMAAAATAAgAAwABAAMAAAAQAAMAAwAAAAIAAAAQAAQAAwAAAAMAAAAQAAUAAgAHAAAAAAAQAAYAAgAHAAAAAAAQAAcAAwAAAAMAAAAQAAgAAwAAAAMAAAAQAAkAAwAAAAMAAAAQAAoAAwAAAAMAAAAMAAoAAgAHAAAAAAAMAAkAAgAHAAAAAAANAAkAAgAHAAAAAAANAAgAAgAHAAAAAAAOAAgAAgAHAAAAAAAOAAcAAgAHAAAAAAAPAAcAAgAHAAAAAAARAAUAAgAHAAAAAAAOAAIAAgAIAAAAAAANAAMAAgAIAAAAAAANAAIAAgAHAAAAAAAMAAMAAgAHAAAAAAALAAQAAgAHAAAAAAAMAAQAAgAIAAAAAAA=")
 tile_set = SubResource("TileSet_gqbix")
+
+[node name="ButterFly" parent="." unique_id=750643943 instance=ExtResource("8_x5dfk")]
+position = Vector2(41, 37)
+speed = 150.0
+acceleration = 1000.0

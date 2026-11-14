@@ -5,7 +5,8 @@ extends CharacterBody2D
 @export var friction: float = 1500.0
 @export var jump_velocity: float = -420.0
 
-
+func _ready():
+	$Sprite2D.play("flying")
 
 
 func _physics_process(delta: float) -> void:
@@ -20,7 +21,7 @@ func _physics_process(delta: float) -> void:
 	if direction != Vector2.ZERO:
 		velocity = velocity.move_toward(direction * speed, acceleration * delta)
 		if direction.x != 0:
-			Sprite2D.flip_h = direction.x < 0
+			$Sprite2D.flip_h = direction.x < 0
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
 
