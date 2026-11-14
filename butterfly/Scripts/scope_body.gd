@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Sprite2D
 
 func _process(delta):
-	$Scope.global_position = get_global_mouse_position()
+	position = get_global_mouse_position()

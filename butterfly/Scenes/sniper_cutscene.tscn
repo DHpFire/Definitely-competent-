@@ -26,13 +26,11 @@ position = Vector2(576.5, 328)
 scale = Vector2(0.44804686, 0.31573802)
 texture = ExtResource("4_v3lus")
 
-[node name="ScopeBody" type="CharacterBody2D" parent="." unique_id=1045829355]
-script = ExtResource("1_v3lus")
-
-[node name="Scope" type="Sprite2D" parent="ScopeBody" unique_id=57374586]
+[node name="Scope" type="Sprite2D" parent="." unique_id=57374586]
 z_index = 2
-position = Vector2(130, -131)
+position = Vector2(129, -128)
 texture = ExtResource("3_tdsg4")
+script = ExtResource("1_v3lus")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1921633026]
 z_index = 5
