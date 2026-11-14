@@ -1,10 +1,10 @@
 extends Camera2D
-@export var look_ahead_distance: float = 50.0
-@export var look_ahead_speed: float = 5.0
-@export var return_speed: float = 15.0
+@export var look_ahead_distance: float = 20
+@export var look_ahead_speed: float = 0.5
+@export var return_speed: float = 5
 var current_look_ahead: Vector2 = Vector2.ZERO
 var shake_strength: float = 0.0
-var shake_decay: float = 15.0
+var shake_decay: float = 10.0
 
 # Called when the node enters the scene tree for the first time.
 func _physics_process(delta: float) -> void:

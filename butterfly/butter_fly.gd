@@ -1,9 +1,8 @@
 extends CharacterBody2D
 
-@export var speed: float = 300.0
+@export var speed: float = 100
 @export var acceleration: float = 1800.0
-@export var friction: float = 1500.0
-@export var jump_velocity: float = -420.0
+@export var friction: float = 200
 
 func _ready():
 	$Sprite2D.play("flying")
