@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bax1mp4rxlq8j"]
+
+[ext_resource type="Script" uid="uid://d0oimrt2w42uc" path="res://butter_fly.gd" id="1_y80f6"]
+[ext_resource type="Texture2D" uid="uid://1fw34apvikvj" path="res://icon.svg" id="2_su2fy"]
+[ext_resource type="Script" uid="uid://bnk8l6y5uh0hm" path="res://Assets/Sprites/camera_2d.gd" id="3_73w8c"]
+
+[node name="ButterFly" type="CharacterBody2D" unique_id=750643943]
+script = ExtResource("1_y80f6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=479151287]
+texture = ExtResource("2_su2fy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715311902]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=94938156]
+script = ExtResource("3_73w8c")
