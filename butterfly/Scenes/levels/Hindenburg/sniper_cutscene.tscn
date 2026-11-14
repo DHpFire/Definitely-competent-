@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bdcckpo7gp07v"]
 
 [ext_resource type="Texture2D" uid="uid://b1u0e81enuetx" path="res://Assets/Sprites/Hindenburg.png" id="1_kbsf5"]
-[ext_resource type="Script" uid="uid://hcmujnmfna34" path="res://Scenes/sniper_cutscene.gd" id="1_tdsg4"]
+[ext_resource type="Script" uid="uid://hcmujnmfna34" path="res://Scenes/levels/Hindenburg/sniper_cutscene.gd" id="1_tdsg4"]
 [ext_resource type="Script" uid="uid://biloqpsyyf6mi" path="res://Scripts/scope_body.gd" id="1_v3lus"]
 [ext_resource type="Texture2D" uid="uid://b1womewh1gnbt" path="res://Assets/Sprites/Scope2.png" id="3_tdsg4"]
 [ext_resource type="Texture2D" uid="uid://d1ddb5ieyg2l8" path="res://Assets/Sprites/Crash.jpg" id="4_v3lus"]

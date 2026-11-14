@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b02i4614olly7"]
+
+[ext_resource type="Script" uid="uid://dwxyyyl5idxvu" path="res://Scenes/rifle.gd" id="1_no7b2"]
+[ext_resource type="Texture2D" uid="uid://bv7vxkc8bwiuu" path="res://Assets/Sprites/Stolen/Sniper.png" id="2_no7b2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_no7b2"]
+size = Vector2(9.824908, 35.680695)
+
+[node name="Rifle" type="Area2D" unique_id=1343831168]
+script = ExtResource("1_no7b2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1989996149]
+rotation = -1.164263
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_no7b2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1177512410]
+position = Vector2(0.37468714, -0.68285567)
+rotation = -2.730539
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_no7b2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
