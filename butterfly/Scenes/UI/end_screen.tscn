@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bo234tphe0e27"]
+
+[ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="1_f2mtv"]
+
+[node name="End_screen" type="Control" unique_id=116369128]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GrassLandBackgroundGuide" type="Sprite2D" parent="." unique_id=1659051766]
+modulate = Color(0.30593967, 0, 0.027829235, 1)
+position = Vector2(577, 328.5)
+scale = Vector2(3.1576087, 3.1682692)
+texture = ExtResource("1_f2mtv")
+
+[node name="Label" type="Label" parent="." unique_id=1354865604]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 305.0
+offset_right = 696.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 45
+text = "U died"

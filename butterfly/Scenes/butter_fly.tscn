@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bax1mp4rxlq8j"]
 
 [ext_resource type="Script" uid="uid://d0oimrt2w42uc" path="res://Scripts/butter_fly.gd" id="1_y80f6"]
-[ext_resource type="Texture2D" uid="uid://d1srrp20xijs8" path="res://Assets/I4L_Butterfly_Sprite256x64(64).png" id="2_73w8c"]
+[ext_resource type="Texture2D" uid="uid://d1srrp20xijs8" path="res://Assets/Sprites/I4L_Butterfly_Sprite256x64(64).png" id="2_73w8c"]
 [ext_resource type="Script" uid="uid://bnk8l6y5uh0hm" path="res://Scripts/camera_2d.gd" id="3_73w8c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73w8c"]
