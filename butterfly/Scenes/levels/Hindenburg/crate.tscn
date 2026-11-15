@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cu7vn4eg850nd"]
+
+[ext_resource type="Script" uid="uid://myk1gf37vkjh" path="res://Scenes/levels/Hindenburg/crate.gd" id="1_5viwq"]
+[ext_resource type="Texture2D" uid="uid://b8o0yubbfskb7" path="res://Assets/Sprites/Stolen/Crate.png" id="1_otkfr"]
+[ext_resource type="PackedScene" uid="uid://cx8huym0ynqts" path="res://Scenes/levels/Hindenburg/BuutonShoww.tscn" id="2_rdjvi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdjvi"]
+size = Vector2(64, 58)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=774467864]
+script = ExtResource("1_5viwq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1972250053]
+texture = ExtResource("1_otkfr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=467226998]
+shape = SubResource("RectangleShape2D_rdjvi")
+
+[node name="butonshowingmech" parent="." unique_id=1150477906 instance=ExtResource("2_rdjvi")]
+position = Vector2(-21, -43)
+
+[node name="Label" type="Label" parent="." unique_id=172110786]
+offset_left = 14.0
+offset_top = -47.0
+offset_right = 79.0
+offset_bottom = -36.0
+text = "stole bullets"
+
+[connection signal="interacted" from="butonshowingmech" to="." method="_on_butonshowingmech_interacted"]
