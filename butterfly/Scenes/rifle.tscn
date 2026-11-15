@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dwxyyyl5idxvu" path="res://Scenes/rifle.gd" id="1_no7b2"]
 [ext_resource type="Texture2D" uid="uid://bv7vxkc8bwiuu" path="res://Assets/Sprites/Stolen/Sniper.png" id="2_no7b2"]
-[ext_resource type="PackedScene" uid="uid://cq16nqineh3f6" path="res://Scripts/fade.tscn" id="3_d8g3d"]
-[ext_resource type="PackedScene" uid="uid://cx8huym0ynqts" path="res://Scenes/levels/Hindenburg/BuutonShoww.tscn" id="4_7jjvt"]
+[ext_resource type="PackedScene" path="res://Scripts/fade.tscn" id="3_d8g3d"]
+[ext_resource type="PackedScene" path="res://Scenes/levels/Hindenburg/BuutonShoww.tscn" id="4_7jjvt"]
+[ext_resource type="AudioStream" uid="uid://qj2hligltnyf" path="res://Assets/Audio/SniperLoad.mp3" id="5_gjcjk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_no7b2"]
 size = Vector2(9.824908, 35.680695)
@@ -26,6 +27,9 @@ shape = SubResource("RectangleShape2D_no7b2")
 
 [node name="butonshowingmech" parent="." unique_id=1150477906 instance=ExtResource("4_7jjvt")]
 position = Vector2(19, -19)
+
+[node name="reload" type="AudioStreamPlayer2D" parent="." unique_id=32023651]
+stream = ExtResource("5_gjcjk")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="interacted" from="butonshowingmech" to="." method="_on_butonshowingmech_interacted"]
