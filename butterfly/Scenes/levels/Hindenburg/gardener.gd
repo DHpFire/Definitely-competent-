@@ -19,5 +19,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 
 func _on_timer_timeout() -> void:
+	$AudioStreamPlayer2D2.play()
 	$PixilFrame0.hide()
 	$Label.hide()

@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://mnaku5vx25ha" path="res://Scenes/levels/Hindenburg/soilder.tscn" id="15_si6oj"]
 [ext_resource type="PackedScene" uid="uid://d3v2c5nmvgp68" path="res://Scenes/levels/Hindenburg/child.tscn" id="15_tdx8m"]
 [ext_resource type="PackedScene" uid="uid://g4228j5f1dc5" path="res://Scenes/levels/Hindenburg/gardener.tscn" id="16_8hctk"]
+[ext_resource type="AudioStream" uid="uid://63axftnqpxer" path="res://Assets/Iam Not Sure.ogg" id="16_tdx8m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_11ssr"]
 size = Vector2(1285, 175.5)
@@ -169,5 +170,10 @@ position = Vector2(993, 349)
 
 [node name="StaticBody2D3" parent="." unique_id=774467864 instance=ExtResource("15_8hctk")]
 position = Vector2(1062, 355)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2086902936]
+stream = ExtResource("16_tdx8m")
+volume_db = -16.715
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

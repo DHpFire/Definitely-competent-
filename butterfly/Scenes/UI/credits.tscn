@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://lyuj37gpopfg"]
 
 [ext_resource type="Texture2D" uid="uid://xaauxb4ywswt" path="res://Assets/Multi_Platformer_Tileset_Free/GrassLand/Background/GrassLand_Background_Guide.png" id="1_r18jl"]
+[ext_resource type="AudioStream" uid="uid://cprqax833a6ao" path="res://Assets/Audio/sasha explaining.mp3" id="2_q4iv0"]
 
 [node name="Credits" type="Control" unique_id=483903087]
 layout_mode = 3
@@ -32,3 +33,7 @@ Derek
 sasha
 Matt"
 horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=423588610]
+stream = ExtResource("2_q4iv0")
+autoplay = true
