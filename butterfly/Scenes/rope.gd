@@ -11,8 +11,9 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group('butterfly'):
-		$Sprite2D.hide()
-		$CollisionShape2D.disabled
-		Global.hin_stage = 1
+
+func _on_butonshowingmech_interacted() -> void:
+	$Sprite2D.hide()
+	$CollisionShape2D.disabled
+	Global.hin_stage = 1
+ # Replace with function body.

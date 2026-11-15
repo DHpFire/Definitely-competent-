@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://d3v2c5nmvgp68"]
 
 [ext_resource type="Texture2D" uid="uid://1fw34apvikvj" path="res://Assets/Sprites/icon.svg" id="1_6tugq"]
+[ext_resource type="Script" uid="uid://cpulh1m58sn7l" path="res://Scenes/levels/Hindenburg/child.gd" id="1_7j3aw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ku4e"]
 size = Vector2(51, 95)
 
 [node name="child" type="CharacterBody2D" unique_id=1385796743]
+script = ExtResource("1_7j3aw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1623224639]
 position = Vector2(0, 9.536743e-07)
