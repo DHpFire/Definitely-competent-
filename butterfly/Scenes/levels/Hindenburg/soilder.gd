@@ -17,3 +17,10 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		$PixilFrame0.show()
 		$Label.show()
 		Global.hin_path2_stage = 2
+		$Timer.start()
+		
+
+
+func _on_timer_timeout() -> void:
+	$PixilFrame0.hide()
+	$Label.hide()

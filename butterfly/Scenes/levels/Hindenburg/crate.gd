@@ -16,4 +16,9 @@ func _on_butonshowingmech_interacted() -> void:
 	if Global.hin_path2_stage == 2:
 		$Label.show()
 		Global.hin_path2_stage = 3
-		
+		$Timer.start()
+
+
+func _on_timer_timeout() -> void:
+	$butonshowingmech.hide()
+	$Label.hide()

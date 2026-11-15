@@ -26,4 +26,7 @@ offset_right = 79.0
 offset_bottom = -36.0
 text = "stole bullets"
 
+[node name="Timer" type="Timer" parent="." unique_id=220450072]
+
 [connection signal="interacted" from="butonshowingmech" to="." method="_on_butonshowingmech_interacted"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
