@@ -9,5 +9,5 @@ script = ExtResource("1_5xglq")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=121245858]
 texture = ExtResource("1_2g0n1")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=691089384]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=691089384 groups=["hin"]]
 polygon = PackedVector2Array(-10, -18, -27, -17, -84, -8, -101, -1, -112, 4, -118, 13, -113, 21, -95, 32, -52, 43, 74, 38, 152, 29, 159, 36, 193, 36, 193, 14, 200, 13, 205, 12, 206, 8, 204, 4, 196, 4, 192, -8, 190, -22, 157, -22, 150, -16, 13, -18)

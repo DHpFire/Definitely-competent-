@@ -152,7 +152,7 @@ position = Vector2(-1283, -5)
 shape = SubResource("RectangleShape2D_365la")
 
 [node name="Rifle" parent="." unique_id=1068037500 instance=ExtResource("8_6sjl4")]
-position = Vector2(355, 392)
+position = Vector2(429, 368)
 
 [node name="mooring tower" parent="." unique_id=1731262838 instance=ExtResource("11_11nll")]
 position = Vector2(288, 290)

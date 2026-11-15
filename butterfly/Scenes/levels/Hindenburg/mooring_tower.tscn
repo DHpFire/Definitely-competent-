@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dejbkmusctuik" path="res://Assets/Sprites/Stolen/MooringTower.png" id="1_iilfy"]
 [ext_resource type="Script" uid="uid://qdfdyfny1lpg" path="res://Scenes/levels/Hindenburg/mooring_tower.gd" id="1_qh6s4"]
+[ext_resource type="PackedScene" uid="uid://cq16nqineh3f6" path="res://Scripts/fade.tscn" id="3_i1fpl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iilfy"]
 size = Vector2(12, 61)
@@ -20,5 +21,7 @@ texture = ExtResource("1_iilfy")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=563768442]
 polygon = PackedVector2Array(-51, 49, 52, 49, 50, 42, 39, 38, 10, -4, 6, -43, 3, -49, -2, -42, -4, -6, -39, 37, -51, 36)
+
+[node name="Fade" parent="." unique_id=355181307 instance=ExtResource("3_i1fpl")]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
