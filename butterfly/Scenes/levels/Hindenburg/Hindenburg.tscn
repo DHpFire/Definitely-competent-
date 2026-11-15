@@ -175,9 +175,9 @@ scale = Vector2(0.41935483, 0.43220338)
 texture = ExtResource("15_aflqy")
 
 [node name="child" parent="." unique_id=1385796743 instance=ExtResource("15_tdx8m")]
-position = Vector2(844, 335)
+position = Vector2(855, 375)
 
 [node name="Gardener" parent="." unique_id=420503553 instance=ExtResource("16_8hctk")]
-position = Vector2(728, 341)
+position = Vector2(717, 360)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

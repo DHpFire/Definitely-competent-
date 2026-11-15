@@ -1,11 +1,16 @@
 [gd_scene format=3 uid="uid://g4228j5f1dc5"]
 
+[ext_resource type="Script" uid="uid://ckq86vde44ytb" path="res://Scenes/levels/Hindenburg/gardener.gd" id="1_5ku4e"]
 [ext_resource type="Texture2D" uid="uid://bi215dbde7bjj" path="res://Assets/Sprites/Stolen/Gardener.png" id="1_ooxld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ku4e"]
 size = Vector2(32, 48)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1nnja"]
+size = Vector2(45, 54)
+
 [node name="Gardener" type="CharacterBody2D" unique_id=1385796743]
+script = ExtResource("1_5ku4e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=745708505]
 shape = SubResource("RectangleShape2D_5ku4e")
@@ -14,3 +19,11 @@ shape = SubResource("RectangleShape2D_5ku4e")
 position = Vector2(-1.9073486e-06, 0)
 scale = Vector2(1.6578946, 1.5645163)
 texture = ExtResource("1_ooxld")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1263362647]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=535044183]
+position = Vector2(-0.5, -3)
+shape = SubResource("RectangleShape2D_1nnja")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
