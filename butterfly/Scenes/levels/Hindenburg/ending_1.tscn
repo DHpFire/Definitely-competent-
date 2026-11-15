@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bwod4c48hufrp"]
+
+[ext_resource type="Texture2D" uid="uid://d1ddb5ieyg2l8" path="res://Assets/Sprites/Crash.jpg" id="1_q0bgg"]
+
+[node name="Ending1" type="Node2D" unique_id=911911620]
+
+[node name="Crash" type="Sprite2D" parent="." unique_id=1922858333]
+position = Vector2(575.5, 315)
+scale = Vector2(0.46289063, 0.3362659)
+texture = ExtResource("1_q0bgg")
