@@ -11,8 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://ct57l2mi8t10y" path="res://Scenes/rope.tscn" id="8_ptfrl"]
 [ext_resource type="Texture2D" uid="uid://bjqtqmsq2bd5s" path="res://Assets/Sprites/Stolen/Ship bollard.png" id="9_bv5dl"]
 [ext_resource type="PackedScene" uid="uid://bsnrjepoj8qoh" path="res://Scenes/levels/Hindenburg/mooring_tower.tscn" id="11_11nll"]
-[ext_resource type="Texture2D" uid="uid://dv8gdbpis70hd" path="res://Assets/Sprites/Stolen/Soldier1.png" id="14_8hctk"]
-[ext_resource type="Texture2D" uid="uid://b8o0yubbfskb7" path="res://Assets/Sprites/Stolen/Crate.png" id="15_aflqy"]
+[ext_resource type="PackedScene" uid="uid://cu7vn4eg850nd" path="res://Scenes/levels/Hindenburg/crate.tscn" id="15_8hctk"]
+[ext_resource type="PackedScene" uid="uid://mnaku5vx25ha" path="res://Scenes/levels/Hindenburg/soilder.tscn" id="15_si6oj"]
 [ext_resource type="PackedScene" uid="uid://d3v2c5nmvgp68" path="res://Scenes/levels/Hindenburg/child.tscn" id="15_tdx8m"]
 [ext_resource type="PackedScene" uid="uid://g4228j5f1dc5" path="res://Scenes/levels/Hindenburg/gardener.tscn" id="16_8hctk"]
 
@@ -158,21 +158,16 @@ position = Vector2(429, 368)
 position = Vector2(288, 290)
 scale = Vector2(2, 2)
 
-[node name="Soldier1" type="Sprite2D" parent="." unique_id=1963395907]
-position = Vector2(1005, 365)
-scale = Vector2(0.22374985, 0.21249999)
-texture = ExtResource("14_8hctk")
-
-[node name="Crate" type="Sprite2D" parent="." unique_id=534951387]
-modulate = Color(0.49870688, 0.6064015, 0.32452706, 1)
-position = Vector2(1036, 370.75)
-scale = Vector2(0.41935483, 0.43220338)
-texture = ExtResource("15_aflqy")
-
 [node name="child" parent="." unique_id=1385796743 instance=ExtResource("15_tdx8m")]
 position = Vector2(855, 375)
 
 [node name="Gardener" parent="." unique_id=420503553 instance=ExtResource("16_8hctk")]
 position = Vector2(598, 361)
+
+[node name="Solider" parent="." unique_id=427317927 instance=ExtResource("15_si6oj")]
+position = Vector2(993, 349)
+
+[node name="StaticBody2D3" parent="." unique_id=774467864 instance=ExtResource("15_8hctk")]
+position = Vector2(1062, 355)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

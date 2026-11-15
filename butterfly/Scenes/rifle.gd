@@ -8,7 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Global.hin_stage == 2:
+	if Global.hin_path2_stage == 3:
 		$butonshowingmech.show()
 
 
@@ -17,7 +17,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 
 func _on_butonshowingmech_interacted() -> void:
-	if Global.hin_stage == 2:
-		Global.hin_stage = 3
+	if Global.hin_path2_stage == 3:
+		Global.hin_stage = 4
 		await Fade.fade(1.0,2.0).finished
 		get_tree().change_scene_to_file("res://Scenes/levels/Hindenburg/sniper_cutscene.tscn")
