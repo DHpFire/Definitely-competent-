@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://bnk8l6y5uh0hm" path="res://Scripts/camera_2d.gd" id="3_73w8c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73w8c"]
-size = Vector2(13, 13)
+size = Vector2(22, 22)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_85p1d"]
 atlas = ExtResource("2_73w8c")
@@ -50,11 +50,12 @@ script = ExtResource("1_y80f6")
 shape = SubResource("RectangleShape2D_73w8c")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1422833581]
+z_index = 10
 position = Vector2(0, -0.043999422)
-scale = Vector2(0.2, 0.21737501)
+scale = Vector2(0.4, 0.434)
 sprite_frames = SubResource("SpriteFrames_qimwc")
 animation = &"flying"
-frame_progress = 0.9967695
+frame_progress = 0.033008106
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=94938156]
 zoom = Vector2(4, 4)

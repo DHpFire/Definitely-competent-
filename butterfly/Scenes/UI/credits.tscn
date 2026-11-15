@@ -18,12 +18,17 @@ texture = ExtResource("1_r18jl")
 
 [node name="Label" type="Label" parent="." unique_id=516204725]
 layout_mode = 0
-offset_left = 417.0
-offset_top = 219.0
-offset_right = 701.0
-offset_bottom = 346.0
-text = "@zulexsri
+offset_left = 343.0
+offset_top = 108.0
+offset_right = 775.0
+offset_bottom = 455.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "butterfly by @zulexsr
+-----------------------
+Definetely Competent
 Heet
 Derek
 sasha
 Matt"
+horizontal_alignment = 1

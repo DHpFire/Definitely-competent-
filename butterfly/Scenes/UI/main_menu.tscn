@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://b6a7uemeow5o6" path="res://Assets/font/BroncoPersonalUse.ttf" id="4_4pqbp"]
 [ext_resource type="FontFile" uid="uid://d1aivi7he1w05" path="res://Assets/font/RomanAntique.ttf" id="5_gih0s"]
 [ext_resource type="PackedScene" uid="uid://cq16nqineh3f6" path="res://Scripts/fade.tscn" id="6_4pqbp"]
+[ext_resource type="AudioStream" uid="uid://63axftnqpxer" path="res://Assets/Iam Not Sure.ogg" id="7_gih0s"]
 
 [node name="mainMenu" type="Control" unique_id=1600239089]
 layout_mode = 3
@@ -79,6 +80,10 @@ theme_override_font_sizes/font_size = 30
 text = "quit"
 
 [node name="Fade" parent="." unique_id=355181307 instance=ExtResource("6_4pqbp")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=721505545]
+stream = ExtResource("7_gih0s")
+autoplay = true
 
 [connection signal="pressed" from="buttons/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="buttons/Settings" to="." method="_on_settings_pressed"]

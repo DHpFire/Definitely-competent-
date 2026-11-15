@@ -20,6 +20,10 @@ config/icon="res://Assets/Sprites/icon.svg"
 
 Global="*uid://c0lgipdf2gca0"
 
+[display]
+
+mouse_cursor/custom_image="uid://bmraqlok8gnn1"
+
 [global_group]
 
 butterfly=""

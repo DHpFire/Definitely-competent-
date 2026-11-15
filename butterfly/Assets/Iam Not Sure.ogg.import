@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://63axftnqpxer"
+path="res://.godot/imported/Iam Not Sure.ogg-a4c152289b6a435c3cbd7d02bd39a072.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Iam Not Sure.ogg"
+dest_files=["res://.godot/imported/Iam Not Sure.ogg-a4c152289b6a435c3cbd7d02bd39a072.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
