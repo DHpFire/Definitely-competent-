@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://ckq86vde44ytb" path="res://Scenes/levels/Hindenburg/gardener.gd" id="1_5ku4e"]
 [ext_resource type="Texture2D" uid="uid://bi215dbde7bjj" path="res://Assets/Sprites/Stolen/Gardener.png" id="1_ooxld"]
+[ext_resource type="Texture2D" uid="uid://clx0jlt87r7qv" path="res://Assets/Sprites/Stolen/pixil-frame-0.png" id="3_1nnja"]
+[ext_resource type="Texture2D" uid="uid://dgw6mixegqv38" path="res://Assets/Sprites/Stolen/GardenScissors.png" id="4_16otg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ku4e"]
 size = Vector2(32, 48)
@@ -25,5 +27,21 @@ texture = ExtResource("1_ooxld")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=535044183]
 position = Vector2(-0.5, -3)
 shape = SubResource("RectangleShape2D_1nnja")
+
+[node name="PixilFrame0" type="Sprite2D" parent="." unique_id=622143539]
+position = Vector2(0, -34)
+texture = ExtResource("3_1nnja")
+
+[node name="Label" type="Label" parent="." unique_id=1704002129]
+offset_left = -46.0
+offset_top = -29.0
+offset_right = -6.0
+offset_bottom = -18.0
+text = "Snip"
+
+[node name="GardenScissors" type="Sprite2D" parent="." unique_id=1262188487]
+position = Vector2(-22, 7)
+rotation = -2.613568
+texture = ExtResource("4_16otg")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://ct57l2mi8t10y" path="res://Scenes/rope.tscn" id="8_ptfrl"]
 [ext_resource type="Texture2D" uid="uid://bjqtqmsq2bd5s" path="res://Assets/Sprites/Stolen/Ship bollard.png" id="9_bv5dl"]
 [ext_resource type="PackedScene" uid="uid://bsnrjepoj8qoh" path="res://Scenes/levels/Hindenburg/mooring_tower.tscn" id="11_11nll"]
-[ext_resource type="Texture2D" uid="uid://dgw6mixegqv38" path="res://Assets/Sprites/Stolen/GardenScissors.png" id="13_tdx8m"]
 [ext_resource type="Texture2D" uid="uid://dv8gdbpis70hd" path="res://Assets/Sprites/Stolen/Soldier1.png" id="14_8hctk"]
 [ext_resource type="Texture2D" uid="uid://b8o0yubbfskb7" path="res://Assets/Sprites/Stolen/Crate.png" id="15_aflqy"]
 [ext_resource type="PackedScene" uid="uid://d3v2c5nmvgp68" path="res://Scenes/levels/Hindenburg/child.tscn" id="15_tdx8m"]
@@ -153,15 +152,11 @@ position = Vector2(-1283, -5)
 shape = SubResource("RectangleShape2D_365la")
 
 [node name="Rifle" parent="." unique_id=1068037500 instance=ExtResource("8_6sjl4")]
-position = Vector2(432, 368)
+position = Vector2(355, 392)
 
 [node name="mooring tower" parent="." unique_id=1731262838 instance=ExtResource("11_11nll")]
 position = Vector2(288, 290)
 scale = Vector2(2, 2)
-
-[node name="GardenScissors" type="Sprite2D" parent="." unique_id=1385333520]
-position = Vector2(669, 366)
-texture = ExtResource("13_tdx8m")
 
 [node name="Soldier1" type="Sprite2D" parent="." unique_id=1963395907]
 position = Vector2(1005, 365)
@@ -178,6 +173,6 @@ texture = ExtResource("15_aflqy")
 position = Vector2(855, 375)
 
 [node name="Gardener" parent="." unique_id=420503553 instance=ExtResource("16_8hctk")]
-position = Vector2(717, 360)
+position = Vector2(598, 361)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

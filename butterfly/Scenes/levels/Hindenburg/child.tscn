@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cpulh1m58sn7l" path="res://Scenes/levels/Hindenburg/child.gd" id="1_7j3aw"]
 [ext_resource type="Texture2D" uid="uid://d31o6d8myh2rn" path="res://Assets/Sprites/Stolen/ChildSriteSheet.png" id="2_7j3aw"]
+[ext_resource type="AudioStream" uid="uid://d0wgokr1s68bb" path="res://Assets/Audio/Ohlookabutterfly.mp3" id="3_g5mhg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g5mhg"]
 atlas = ExtResource("2_7j3aw")
@@ -78,15 +79,15 @@ size = Vector2(13, 24)
 [sub_resource type="CircleShape2D" id="CircleShape2D_7j3aw"]
 radius = 93.04838
 
-[node name="child" type="CharacterBody2D" unique_id=1385796743]
+[node name="child" type="CharacterBody2D" unique_id=1385796743 groups=["child"]]
 script = ExtResource("1_7j3aw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=164079941]
 sprite_frames = SubResource("SpriteFrames_qqoo5")
 animation = &"new_animation"
-frame_progress = 0.37637287
+frame_progress = 0.68875664
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=745708505]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=745708505 groups=["child"]]
 position = Vector2(0, -3)
 shape = SubResource("RectangleShape2D_5ku4e")
 
@@ -94,6 +95,10 @@ shape = SubResource("RectangleShape2D_5ku4e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1743742961]
 shape = SubResource("CircleShape2D_7j3aw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2059560975]
+position = Vector2(0, -3)
+stream = ExtResource("3_g5mhg")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

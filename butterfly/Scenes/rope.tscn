@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://ctqxr14evqwgi" path="res://Scenes/rope.gd" id="1_qawu5"]
 [ext_resource type="Texture2D" uid="uid://bllej50eldhq6" path="res://Assets/Sprites/Stolen/Hook.png" id="2_qawu5"]
-[ext_resource type="PackedScene" uid="uid://cx8huym0ynqts" path="res://Scenes/levels/Hindenburg/BuutonShoww.tscn" id="3_wytdi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_no7b2"]
 size = Vector2(11.912455, 19.840347)
@@ -18,8 +17,4 @@ texture = ExtResource("2_qawu5")
 position = Vector2(0, 64)
 shape = SubResource("RectangleShape2D_no7b2")
 
-[node name="butonshowingmech" parent="." unique_id=1150477906 instance=ExtResource("3_wytdi")]
-position = Vector2(21, 50)
-
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="interacted" from="butonshowingmech" to="." method="_on_butonshowingmech_interacted"]
