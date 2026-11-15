@@ -1,10 +1,19 @@
 [gd_scene format=3 uid="uid://bwod4c48hufrp"]
 
+[ext_resource type="Script" uid="uid://dr7g5s3wb6eb8" path="res://Scenes/levels/Hindenburg/ending_1.gd" id="1_6c7qp"]
 [ext_resource type="Texture2D" uid="uid://d1ddb5ieyg2l8" path="res://Assets/Sprites/Crash.jpg" id="1_q0bgg"]
+[ext_resource type="PackedScene" uid="uid://cq16nqineh3f6" path="res://Scripts/fade.tscn" id="3_5i3b1"]
 
 [node name="Ending1" type="Node2D" unique_id=911911620]
+script = ExtResource("1_6c7qp")
 
 [node name="Crash" type="Sprite2D" parent="." unique_id=1922858333]
 position = Vector2(575.5, 315)
 scale = Vector2(0.46289063, 0.3362659)
 texture = ExtResource("1_q0bgg")
+
+[node name="Timer" type="Timer" parent="." unique_id=1128983037]
+
+[node name="Fade" parent="." unique_id=355181307 instance=ExtResource("3_5i3b1")]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
