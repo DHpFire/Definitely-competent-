@@ -1,26 +1,20 @@
 [gd_scene format=3 uid="uid://mnaku5vx25ha"]
 
-[ext_resource type="Script" uid="uid://cho7dmi22xh4" path="res://Scenes/levels/Hindenburg/soilder.gd" id="1_1a1se"]
-[ext_resource type="Texture2D" uid="uid://dv8gdbpis70hd" path="res://Assets/Sprites/Stolen/Soldier1.png" id="1_4jq4d"]
-[ext_resource type="Texture2D" uid="uid://clx0jlt87r7qv" path="res://Assets/Sprites/Stolen/pixil-frame-0.png" id="3_2ta4w"]
+[ext_resource type="Texture2D" uid="uid://1fw34apvikvj" path="res://Assets/Sprites/icon.svg" id="1_4jq4d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ku4e"]
-size = Vector2(58, 77)
+size = Vector2(50, 126)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4jq4d"]
-size = Vector2(76, 85)
-
-[node name="Solider" type="CharacterBody2D" unique_id=1385796743]
-script = ExtResource("1_1a1se")
+[node name="Gardener" type="CharacterBody2D" unique_id=1385796743]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1623224639]
-position = Vector2(-0.37109402, -0.24999595)
-scale = Vector2(0.39628905, 0.39249995)
+position = Vector2(0, -3.5527137e-15)
+scale = Vector2(0.3925781, 0.984375)
 texture = ExtResource("1_4jq4d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=745708505]
-position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_5ku4e")
+<<<<<<< HEAD
 disabled = true
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2006713870]
@@ -44,3 +38,5 @@ text = "Ouch"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+=======
+>>>>>>> parent of 4e81e36 (confiliects 🥲🥲)
