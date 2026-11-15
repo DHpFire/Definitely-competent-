@@ -11,7 +11,7 @@ func _ready() -> void:
 	body_exited.connect(_on_body_exited)
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("butterfly") or body.name == "ButterFly":
+	if body.is_in_group("butterfly"):
 		player_in_range = true
 		prompt_sprite.visible = true
 
@@ -25,5 +25,5 @@ func _process(_delta: float) -> void:
 		player_in_range = false
 		prompt_sprite.hide()
 		$CollisionShape2D.set_deferred("disabled", true)
-		Global.hin_stage = 1
+		#Global.hin_stage = 1
 		interacted.emit()

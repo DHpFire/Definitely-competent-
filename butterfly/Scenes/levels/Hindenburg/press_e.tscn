@@ -3,4 +3,5 @@
 [ext_resource type="Texture2D" uid="uid://bmpgfio2gye24" path="res://Assets/Press E.png" id="1_djihn"]
 
 [node name="presss_e" type="Sprite2D" unique_id=492070953]
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_djihn")

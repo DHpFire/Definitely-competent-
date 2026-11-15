@@ -11,8 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://ct57l2mi8t10y" path="res://Scenes/rope.tscn" id="8_ptfrl"]
 [ext_resource type="Texture2D" uid="uid://bjqtqmsq2bd5s" path="res://Assets/Sprites/Stolen/Ship bollard.png" id="9_bv5dl"]
 [ext_resource type="PackedScene" uid="uid://bsnrjepoj8qoh" path="res://Scenes/levels/Hindenburg/mooring_tower.tscn" id="11_11nll"]
-[ext_resource type="PackedScene" uid="uid://cx8huym0ynqts" path="res://Scenes/levels/Hindenburg/BuutonShoww.tscn" id="12_f8pgj"]
-[ext_resource type="PackedScene" uid="uid://vkfabsgu1tba" path="res://Scenes/levels/Hindenburg/press_e.tscn" id="13_fkmqx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_11ssr"]
 size = Vector2(1285, 175.5)
@@ -155,13 +153,5 @@ position = Vector2(422, 369)
 [node name="mooring tower" parent="." unique_id=1731262838 instance=ExtResource("11_11nll")]
 position = Vector2(288, 290)
 scale = Vector2(2, 2)
-
-[node name="butonshowingmech" parent="." unique_id=1150477906 instance=ExtResource("12_f8pgj")]
-position = Vector2(573, 367)
-script = null
-
-[node name="presss_e" parent="butonshowingmech" unique_id=492070953 instance=ExtResource("13_fkmqx")]
-position = Vector2(10.999992, -29.999996)
-scale = Vector2(0.029036868, 0.031428553)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

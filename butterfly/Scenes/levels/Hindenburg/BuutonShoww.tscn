@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cx8huym0ynqts"]
 
 [ext_resource type="Script" uid="uid://dqdjy5o73tjq8" path="res://Scenes/levels/Hindenburg/show_button.gd" id="1_gvi8q"]
+[ext_resource type="PackedScene" uid="uid://vkfabsgu1tba" path="res://Scenes/levels/Hindenburg/press_e.tscn" id="2_m1w0c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bc7s3"]
 size = Vector2(51.5, 47)
@@ -10,3 +11,5 @@ script = ExtResource("1_gvi8q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=28498196]
 shape = SubResource("RectangleShape2D_bc7s3")
+
+[node name="presss_e" parent="." unique_id=492070953 instance=ExtResource("2_m1w0c")]

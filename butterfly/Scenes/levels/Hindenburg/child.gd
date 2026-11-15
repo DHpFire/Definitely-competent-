@@ -6,7 +6,7 @@ const SPEED = 300.0
 
 func _physics_process(delta: float) -> void:
 
-	var direction := butterfly.get_global_position()
+	var direction = butterfly.get_global_position()
 	if direction:
 		velocity.x = direction * SPEED
 	else:
