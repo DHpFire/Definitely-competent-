@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://b6ern3bc46qg2" path="res://Assets/font/RioGrande.ttf" id="3_mrfpk"]
 [ext_resource type="FontFile" uid="uid://b6a7uemeow5o6" path="res://Assets/font/BroncoPersonalUse.ttf" id="4_4pqbp"]
 [ext_resource type="FontFile" uid="uid://d1aivi7he1w05" path="res://Assets/font/RomanAntique.ttf" id="5_gih0s"]
+[ext_resource type="PackedScene" uid="uid://cq16nqineh3f6" path="res://Scripts/fade.tscn" id="6_4pqbp"]
 
 [node name="mainMenu" type="Control" unique_id=1600239089]
 layout_mode = 3
@@ -69,7 +70,6 @@ text = "Play"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_gih0s")
 theme_override_font_sizes/font_size = 30
-disabled = true
 text = "Settings"
 
 [node name="Quit" type="Button" parent="buttons" unique_id=752509931]
@@ -77,6 +77,8 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("5_gih0s")
 theme_override_font_sizes/font_size = 30
 text = "quit"
+
+[node name="Fade" parent="." unique_id=355181307 instance=ExtResource("6_4pqbp")]
 
 [connection signal="pressed" from="buttons/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="buttons/Settings" to="." method="_on_settings_pressed"]

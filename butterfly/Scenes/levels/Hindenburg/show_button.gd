@@ -25,5 +25,4 @@ func _process(_delta: float) -> void:
 		player_in_range = false
 		prompt_sprite.hide()
 		$CollisionShape2D.set_deferred("disabled", true)
-		#Global.hin_stage = 1
 		interacted.emit()

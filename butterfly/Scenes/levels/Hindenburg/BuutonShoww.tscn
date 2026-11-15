@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://vkfabsgu1tba" path="res://Scenes/levels/Hindenburg/press_e.tscn" id="2_m1w0c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bc7s3"]
-size = Vector2(51.5, 47)
+size = Vector2(44.75, 45.5)
 
 [node name="butonshowingmech" type="Area2D" unique_id=1150477906]
 script = ExtResource("1_gvi8q")

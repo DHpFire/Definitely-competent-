@@ -12,6 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_play_pressed() -> void:
+	await $Fade.fade(1.0,2.0).finished
 	get_tree().change_scene_to_file('res://Scenes/levels/Hindenburg/Hindenburg.tscn')
 
 
@@ -20,4 +21,5 @@ func _on_quit_pressed() -> void:
 
 
 func _on_settings_pressed() -> void:
-	get_tree().change_scene_to_file('res://Scenes/settings.tscn')
+	await $Fade.fade(1.0,1.0).finished
+	get_tree().change_scene_to_file("res://Scenes/UI/Settings.tscn")

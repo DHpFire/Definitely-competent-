@@ -1,9 +1,64 @@
-[gd_scene format=3 uid="uid://cg8jp4nudxfu"]
+[gd_scene format=3 uid="uid://sriibqhyo7uh"]
 
-[node name="Settings" type="Control" unique_id=1662838442]
+[ext_resource type="Script" uid="uid://bwaa43qsr23ik" path="res://Scenes/UI/settings.gd" id="1_8vg77"]
+[ext_resource type="Texture2D" uid="uid://bsjlqmago845h" path="res://Assets/Sprites/Stolen/image(3).png" id="2_o3gfs"]
+
+[node name="Settings" type="Control" unique_id=405795708]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = 168.0
+offset_right = -150.0
+offset_bottom = 168.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8vg77")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2125464888]
+z_index = -10
+layout_mode = 0
+offset_left = -276.0
+offset_top = -469.0
+offset_right = 1644.0
+offset_bottom = 731.0
+texture = ExtResource("2_o3gfs")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=32729761]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 1.0
+offset_right = 1322.0
+offset_bottom = 166.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "Settings
+"
+fit_content = true
+scroll_active = false
+tab_size = 5
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=791393553]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 119.0
+offset_right = 1009.0
+offset_bottom = 285.0
+alignment = 1
+
+[node name="Graphic_settings" type="MenuButton" parent="VBoxContainer" unique_id=983399729]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Graphics setting"
+flat = false
+item_count = 3
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Windowed Boorderless"
+popup/item_1/id = 1
+popup/item_2/text = "Windowed"
+popup/item_2/id = 2
