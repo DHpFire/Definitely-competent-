@@ -8,12 +8,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if Global.hin_path1_stage == 1:
+		$Sprite2D.hide()
+		$CollisionShape2D.disabled
+		Global.hin_path1_stage = 2
 
 
 
-func _on_butonshowingmech_interacted() -> void:
-	$Sprite2D.hide()
-	$CollisionShape2D.disabled
-	Global.hin_stage = 1
  # Replace with function body.
