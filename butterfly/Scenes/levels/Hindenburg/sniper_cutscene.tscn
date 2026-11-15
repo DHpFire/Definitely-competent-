@@ -46,6 +46,7 @@ shape = SubResource("CapsuleShape2D_kbsf5")
 [node name="Fade" parent="." unique_id=355181307 instance=ExtResource("6_va1ba")]
 colour = "white"
 
+<<<<<<< HEAD
 [node name="bexplosion" type="AudioStreamPlayer2D" parent="." unique_id=1749552507]
 stream = ExtResource("7_rfbuv")
 
@@ -53,6 +54,9 @@ stream = ExtResource("7_rfbuv")
 stream = ExtResource("8_jwncl")
 
 [node name="Timer" type="Timer" parent="." unique_id=880238985]
+=======
+[node name="Timer" type="Timer" parent="." unique_id=809419569]
+>>>>>>> 87e8fe0fe36d5fc01cdbec84990232d18af42079
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
