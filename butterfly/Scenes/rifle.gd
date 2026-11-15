@@ -17,13 +17,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 
 func _on_butonshowingmech_interacted() -> void:
-<<<<<<< HEAD
-	if Global.hin_stage == 2:
-		$AudioStreamPlayer2D.play()
-		Global.hin_stage = 3
-=======
 	if Global.hin_path2_stage == 3:
 		Global.hin_stage = 4
->>>>>>> 87e8fe0fe36d5fc01cdbec84990232d18af42079
 		await Fade.fade(1.0,2.0).finished
 		get_tree().change_scene_to_file("res://Scenes/levels/Hindenburg/sniper_cutscene.tscn")
